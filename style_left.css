@@ -38,7 +38,7 @@
 	 background-color: #dc931a;
 }
 
-.num2
+.num2, .num4, .num6
 {
 	background-color: #444444;
 	font-family: 'aaarghnormal', arial, serif;
@@ -53,17 +53,6 @@
     background-color: #dc931a;
     font-family: 'aaarghnormal', arial, serif;
     font-size: 0.9em;
-}
-
-.num4, .num6
-{
-	background-color: #444444;
-	font-family: 'aaarghnormal', arial, serif;
-	text-align: center;
-	color: #dc931a;
-	padding-top: 10px;
-	padding: 5px;
-	text-transform: uppercase;
 }
 
 .num5
