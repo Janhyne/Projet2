@@ -18,66 +18,61 @@
 
 .container
 {
-	padding: 5px;
-	width: 20%;
+	padding: 0px;
+	width: 75%;
 	display: flex; /* on active la flexbox*/
 	flex-direction: column;/* on définit la direction*/
 	justify-content: flex-start; /* positionnement des colonnes*/
 }
 
-.element
+.element, .sous-titre
 {
 	height: auto;
 	padding-left: 10px;
-    width: 90%;
-	text-align: left;
-}
-
-.num1
-{
-	 background-color: #dc931a;
-}
-
-.num2, .num4, .num6
-{
-	background-color: #444444;
-	font-family: 'aaarghnormal', arial, serif;
+    width: 45%;
 	text-align: center;
-	color: #dc931a;
-	padding: 5px;
-	text-transform: uppercase;
 }
 
-.num3
+p
 {
-    background-color: #dc931a;
-    font-family: 'aaarghnormal', arial, serif;
-    font-size: 0.9em;
-}
-
-.num5
-{
-	background-color: #dc931a;
-    font-family: 'aaarghnormal', arial, serif;
-    text-align: left;
-    padding: 5px;
-    font-size: 0.9em;
+   line-height: 140%;
 }
 
 img
 {
-	width: auto;
-	padding-left: 10px;
+    width: 45%;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
 }
 
-.num7
+.sous-titre
 {
-    background-color: #dc931a;
-    font-family: 'aaarghnormal', arial, serif;
-    text-align: left;
+	width: 47%;
+    background-color: #d2ac07;
+	font-family: 'aaarghnormal', arial, serif;
+	text-align: center;
+	color:  #1d4851;
     padding: 5px;
+	text-transform: uppercase;
+}
+
+.num1, .num2, .num3, .num5, .num7
+{
+    background-color:  #285F67;
+    font-family: 'aaarghnormal', arial, serif;
     font-size: 0.9em;
- }
+    text-align: left;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.flotte {
+    float: right;
+    width: 60%;
+}
+
 html 
 {
     background-color: #f6ecda;
@@ -87,13 +82,14 @@ body
 {
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 div#bigbox
 {
     min-height: 100%;
-    width: 900px;
-    padding: 0 10px;
+    width: 800px;
+    padding: 0 8px;
     margin: 0 auto;
     position: relative;
     background-color: #f6ecda;  
@@ -110,8 +106,9 @@ div#header h1
     margin: 0;
     position: absolute;
     bottom: 10px;
-    left: 30px;
-    font: 2.6em 'aaarghnormal', arial, serif;
+    left: 2px;
+    font: 2.4em 'aaarghnormal', arial, serif;
+    color: #1d4851;
     text-transform: uppercase;
     font-weight: lighter;
 }
@@ -120,52 +117,29 @@ div#header h1
 div#content
 {
     float: left;
-    width: 530px;
-    margin-left: 10px;
+    width: 700px;
+    margin-left: 2px;
 }
 
 div#content h2 
 {
-    padding-left: 25px;
+    margin: 1px;
+    padding-left: 0px;
     padding-top: 0;
-    color: #eca00f;
+    color: #d2ac07;
     font: 1.8em 'aaarghnormal', arial, serif;
 }
 
-div.formation h3 
+div.formation .experience .formation, h3 
 {
     color: black;
     text-transform: uppercase;
-    font: 1.3em 'aaarghnormal', arial, serif;
+    font: 1.1em 'aaarghnormal', arial, serif;
     padding-top: 80px;
-    padding: 0.5em 0;
-    border-bottom-width: 3px;
+    padding: 0.3em 0;
+    border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: #999;
-}
-
-div.experience h3
-{
-    color: black;
-    text-transform: uppercase;
-    font: 1.3em 'aaarghnormal', arial, serif;
-    padding-top: 80px;
-    padding: 0.5em 0;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #999;
-}
-
-div.competences h3
-{   
-    color: black;
-    text-transform: uppercase;
-    font: 1.3em 'aaarghnormal', arial, serif;
-    padding-top: 80px;
-    padding: 0.5em 0;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #999;
+    border-bottom-color: #1d4851;
 }
 
 ul
@@ -178,18 +152,18 @@ ul
 
 /*responsive pour les blocs */
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 820px){
     
-/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+    /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
 
-.super_container
-{
-    flex-direction: column;
-}
+    .super_container
+    {
+        flex-direction: column;
+    }
 
     /* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
 
-.container, .element  {
+    .container, .element, .right  {
         width: 100%;
     }
 
@@ -202,6 +176,10 @@ ul
     {
         width: 25%;
         padding: 0;
+    }
+
+    .sous-titre {
+        width: 100%;
     }
 
 }
