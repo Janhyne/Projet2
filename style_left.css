@@ -51,6 +51,11 @@ img
 	background-color: #d2ac07;
 	font-family: 'aaarghnormal', arial, serif;
 	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
 	color:  #1d4851;
     padding: 10px;
 	text-transform: uppercase;
@@ -84,6 +89,10 @@ body
     height: 100%;
     margin: 0;
     overflow-x: hidden;
+}
+
+div{
+    min-height: 7vh;
 }
 
 div#bigbox
