@@ -11,7 +11,7 @@
 
 html 
 {
-    background-color: #285F67;
+    background-color: rgb(0,172,193);
 }
 
 body
@@ -47,7 +47,7 @@ body
 
 .element
 {
-    background-color:  #285F67;
+    background-color: rgb(0,172,193);
     font-family: 'aaarghnormal', arial, serif;
     font-size: 0.9em;
     text-align: left;
@@ -58,13 +58,13 @@ body
 
 .element p
 {
-    text-align: justify;
+   text-align: justify;
    line-height: 140%;
 }
 
 .sous-titre
 {
-    background-color: #d2ac07;
+    background-color: rgb(255,152,0);
     font-family: 'aaarghnormal', arial, serif;
     text-align: center;
     display: flex;
@@ -72,7 +72,7 @@ body
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
-    color:  #1d4851;
+    color:  rgb(74,20,140);
     padding: 10px;
     text-transform: uppercase;
 }
@@ -96,7 +96,7 @@ img
 
 /* partie de droite */
 
-.right
+.rubriques
 {
     background-color: #f6ecda;
     min-height: 100vh;
@@ -122,9 +122,14 @@ h1
     bottom: 10px;
     left: 2px;
     font: 2.4em 'aaarghnormal', arial, serif;
-    color: #1d4851;
+    color: rgb(74,20,140);
     text-transform: uppercase;
     font-weight: lighter;
+}
+
+#prenom
+{
+   color: rgb(0,188,212);
 }
 
 h2 
@@ -132,7 +137,7 @@ h2
     margin: 1px;
     padding-left: 0px;
     padding-top: 0px;
-    color: #d2ac07;
+    color: rgb(255,152,0);
     font: 1.8em 'aaarghnormal', arial, serif;
 }
 
@@ -145,7 +150,7 @@ h3
     padding: 0.3em 0;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: #1d4851;
+    border-bottom-color: rgb(49,27,146);
 }
 
 ul
@@ -162,14 +167,14 @@ ul
     
     /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
 
-    .super_container
+    .container
     {
         flex-direction: column;
     }
 
     /* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
 
-    .sidebar, .element, .right  {
+    .sidebar, .element, .rubriques  {
         width: 100%;
     }
 
