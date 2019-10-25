@@ -11,7 +11,7 @@
 
 html 
 {
-    background-color: rgb(0,172,193);
+    background-color: rgb(156,39,176);
 }
 
 body
@@ -47,7 +47,7 @@ body
 
 .element
 {
-    background-color: rgb(0,172,193);
+    background-color: rgb(156,39,176);
     font-family: 'aaarghnormal', arial, serif;
     font-size: 0.9em;
     text-align: left;
@@ -64,7 +64,7 @@ body
 
 .sous-titre
 {
-    background-color: rgb(255,152,0);
+    background-color: rgb(248,187,208);
     font-family: 'aaarghnormal', arial, serif;
     text-align: center;
     display: flex;
@@ -72,7 +72,7 @@ body
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
-    color:  rgb(74,20,140);
+    color:  rgb(33,33,33);
     padding: 10px;
     text-transform: uppercase;
 }
@@ -98,7 +98,7 @@ img
 
 .rubriques
 {
-    background-color: #f6ecda;
+    background-color: rgb(255,224,178);
     min-height: 100vh;
 }
 
@@ -122,14 +122,15 @@ h1
     bottom: 10px;
     left: 2px;
     font: 2.4em 'aaarghnormal', arial, serif;
-    color: rgb(74,20,140);
+    color: rgb(33,33,33);
+    text-shadow: 4px 4px 4px white;;
     text-transform: uppercase;
     font-weight: lighter;
 }
 
-#prenom
+.prenom
 {
-   color: rgb(0,188,212);
+   color: rgb(156,39,176);
 }
 
 h2 
@@ -137,7 +138,7 @@ h2
     margin: 1px;
     padding-left: 0px;
     padding-top: 0px;
-    color: rgb(255,152,0);
+    color: rgb(156,39,176);
     font: 1.8em 'aaarghnormal', arial, serif;
 }
 
@@ -150,7 +151,7 @@ h3
     padding: 0.3em 0;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: rgb(49,27,146);
+    border-bottom-color: gb(156,39,176);
 }
 
 ul
