@@ -152,7 +152,7 @@ h3
     padding: 0.3em 0;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: gb(156,39,176);
+    border-bottom-color: rgb(255,160,0);
 }
 
 ul
@@ -161,6 +161,10 @@ ul
     padding: 0;
     list-style: none;
     font: 0.9em 'aaarghnormal', arial, serif;
+}
+
+.fas fa circle{
+    font-size: 10px;
 }
 
 /*responsive pour les blocs */
