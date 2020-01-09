@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Light-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Light-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html 
+{
+    background-color: rgb(250,250,250);
+}
+
+body
+{
+    font-family: 'open_sansregular';
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container
+{
+	display: flex;
+	flex-direction: row;
+}
+
+/* colonne de gauche */
+
+.sidebar
+{
+	background-color: rgb(0,145,234);
+    padding: 0px;
+	width: 35%;
+	display: flex; /* on active la flexbox*/
+	flex-direction: column;/* on définit la direction*/
+	justify-content: flex-start; /* positionnement des colonnes*/
+}
+
+.element, .sous-titre
+{
+	height: auto;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.element
+{
+    background-color: rgb(0,145,234);
+    font-size: 0.9em;
+    text-align: left;
+    color: white;
+    min-height: 24vh;
+    padding: 10px;
+    margin: 0;
+}
+
+.element p
+{
+   text-align: justify;
+   line-height: 140%;
+}
+
+.sous-titre
+{
+    background-color: rgb(255,160,0);
+    font-size: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    color:  rgb(33,33,33);
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.flotte {
+    float: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 80%;
+}
+
+img
+{
+    width: 42%;
+    max-width: 150px;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 5px;
+    margin-left: -7px;
+}
+
+/* partie de droite */
+
+.rubriques
+{
+    background-color: rgb(250,250,250);
+    min-height: 100vh;
+}
+
+#header 
+{
+    height: 100px;
+    position: relative;
+}
+
+#content
+{
+    float: left;
+    margin-left: 20px;
+}
+
+h1 
+{
+    margin-left: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 2px;
+    font-size: 2.4em;
+    font-weight: lighter;
+    color: rgb(33,33,33);
+    text-transform: uppercase;
+    
+}
+
+#prenom
+{
+   color: rgb(0,145,234);
+}
+
+h2 
+{
+    margin: 1px;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: rgb(255,160,0);
+    font-size: 1.8em;
+}
+
+h3 
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    padding-top: 80px;
+    padding: 0.3em 0;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255,160,0);
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+em
+{
+    font-size: 0.9em;
+}
+
+.fas fa circle{
+    font-size: 10px;
+}
+
+/*responsive pour les blocs */
+
+@media screen and (max-width: 820px){
+    
+    /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+
+    .container
+    {
+        flex-direction: column;
+    }
+
+    /* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
+
+    .sidebar, .element, .rubriques  {
+        width: 100%;
+    }
+
+    .sidebar img
+    {
+        width: 25%;
+        padding: 0;
+    }
+
+    .sous-titre {
+        width: 100%;
+    }
+
+    .element
+    {
+       padding: 10px;
+    }
+
+    .element p
+    {
+        padding-right: 20px;
+    }
+}
+
+
